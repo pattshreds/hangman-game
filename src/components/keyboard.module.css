@@ -1,0 +1,26 @@
+.btns {
+    width: 100%;
+    border: 3px solid black;
+    background: none;
+    aspect-ratio: 1 / 1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.btns.active {
+    background-color: rgb(83, 168, 204);
+    color: white;
+}
+
+.btns.inactive {
+    opacity: 0.3;
+}
+
+.btns:hover:not(:disabled),
+.btns:focus:not(:disabled) {
+    background-color: rgb(137, 208, 238);
+}
