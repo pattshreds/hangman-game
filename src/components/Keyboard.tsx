@@ -44,8 +44,14 @@ export function Keyboard({
     return (
         <div
             style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(75px, 1fr))',
+                // display: 'grid',
+                // gridTemplateColumns:
+                //     'repeat(auto-fit, minmax(clamp(40px, 8vw, 75px), 1fr))',
+                // gap: '.5rem',
+                padding: '0',
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
                 gap: '.5rem',
             }}
         >
@@ -60,6 +66,11 @@ export function Keyboard({
                         } ${isInactive ? styles.inactive : ''}`}
                         disabled={isInactive || isActive || disabled}
                         key={key}
+                        style={{
+                            fontSize: 'clamp(1.8rem, 2vw, 1.5rem)',
+                            padding: 'clamp(0.25rem, 1vw, 0.5rem)',
+                            width: 'clamp(40px, 8vw, 75px)',
+                        }}
                     >
                         {key}
                     </button>

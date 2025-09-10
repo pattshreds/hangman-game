@@ -3,6 +3,7 @@ import words from './wordList.json';
 import { HangmanDrawing } from './components/HangmanDrawing';
 import { HangmanWord } from './components/HangmanWord';
 import { Keyboard } from './components/Keyboard';
+import './global.css';
 
 function getWord() {
     return words[Math.floor(Math.random() * words.length)];
@@ -75,14 +76,18 @@ function App() {
 
     return (
         <div
-            style={{
-                maxWidth: '800px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '2rem',
-                margin: '0 auto',
-                alignItems: 'center',
-            }}
+            id='appContainer'
+            style={
+                {
+                    // Temporarily (or not) moved into global.css
+                    // maxWidth: '100vw',
+                    // display: 'flex',
+                    // flexDirection: 'column',
+                    // gap: '2rem',
+                    // margin: '0 auto',
+                    // alignItems: 'center',
+                }
+            }
         >
             <div
                 style={{

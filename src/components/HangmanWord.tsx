@@ -12,9 +12,11 @@ export function HangmanWord({
     return (
         <div
             style={{
+                border: '2px solid red',
+                maxWidth: '100vw',
                 display: 'flex',
                 gap: '.25em',
-                fontSize: '6rem',
+                fontSize: 'clamp(2rem, 12vw, 6rem)',
                 fontWeight: 'bold',
                 textTransform: 'uppercase',
                 fontFamily: 'monospace',

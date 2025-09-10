@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#appContainer {
+    border: 2px solid rgb(104, 255, 104);
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
