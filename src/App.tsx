@@ -21,7 +21,7 @@ function App() {
 
     const isWinner = wordToGuess
         .split('')
-        .every((letter) => guessedLetters.includes(letter));
+        .every((letter: string) => guessedLetters.includes(letter));
 
     const addGuessedLetter = useCallback(
         (letter: string) => {
