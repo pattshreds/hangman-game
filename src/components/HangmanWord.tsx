@@ -16,7 +16,7 @@ export function HangmanWord({
                 maxWidth: '100vw',
                 display: 'flex',
                 gap: '.25em',
-                fontSize: 'clamp(2rem, 12vw, 6rem)',
+                fontSize: 'clamp(2rem, 12vw, 4rem)',
                 fontWeight: 'bold',
                 textTransform: 'uppercase',
                 fontFamily: 'monospace',

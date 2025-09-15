@@ -3,13 +3,13 @@
 const HEAD = (
     <div
         style={{
-            width: '50px',
-            height: '50px',
+            width: '25px',
+            height: '25px',
             borderRadius: '100%',
             border: '10px solid black',
             position: 'absolute',
-            top: '50px',
-            right: '-30px',
+            top: '30px',
+            right: '-18px',
         }}
     />
 );
@@ -18,10 +18,10 @@ const BODY = (
     <div
         style={{
             width: '10px',
-            height: '100px',
+            height: '50px',
             background: 'black',
             position: 'absolute',
-            top: '120px',
+            top: '70px',
             right: '0',
         }}
     />
@@ -30,12 +30,12 @@ const BODY = (
 const RIGHT_ARM = (
     <div
         style={{
-            width: '100px',
-            height: '10px',
+            width: '50px',
+            height: '8px',
             background: 'black',
             position: 'absolute',
-            top: '150px',
-            right: '-100px',
+            top: '80px',
+            right: '-50px',
             rotate: '-30deg',
             transformOrigin: 'left bottom',
         }}
@@ -45,11 +45,11 @@ const RIGHT_ARM = (
 const LEFT_ARM = (
     <div
         style={{
-            width: '100px',
-            height: '10px',
+            width: '50px',
+            height: '8px',
             background: 'black',
             position: 'absolute',
-            top: '150px',
+            top: '80px',
             right: '10px',
             rotate: '30deg',
             transformOrigin: 'right bottom',
@@ -60,12 +60,12 @@ const LEFT_ARM = (
 const RIGHT_LEG = (
     <div
         style={{
-            width: '100px',
-            height: '10px',
+            width: '50px',
+            height: '8px',
             background: 'black',
             position: 'absolute',
-            top: '210px',
-            right: '-90px',
+            top: '110px',
+            right: '-42px',
             rotate: '60deg',
             transformOrigin: 'left bottom',
         }}
@@ -75,12 +75,12 @@ const RIGHT_LEG = (
 const LEFT_LEG = (
     <div
         style={{
-            width: '100px',
-            height: '10px',
+            width: '50px',
+            height: '8px',
             background: 'black',
             position: 'absolute',
-            top: '210px',
-            right: '0',
+            top: '110px',
+            right: '2px',
             rotate: '-60deg',
             transformOrigin: 'right bottom',
         }}
@@ -105,34 +105,34 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
             {BODY_PARTS.slice(0, numberOfGuesses)}
             <div
                 style={{
-                    height: '50px',
+                    height: '35px',
                     width: '10px',
                     background: 'black',
                     position: 'absolute',
                     top: '0',
-                    right: '0',
+                    right: '0px',
                 }}
             />
             <div
                 style={{
                     height: '10px',
-                    width: '200px',
+                    width: '100px',
                     background: 'black',
-                    marginLeft: '120px',
+                    marginLeft: '70px',
                 }}
             />
             <div
                 style={{
-                    height: '400px',
+                    height: '250px',
                     width: '10px',
                     background: 'black',
-                    marginLeft: '120px',
+                    marginLeft: '70px',
                 }}
             />
             <div
                 style={{
                     height: '10px',
-                    width: '250px',
+                    width: '150px',
                     background: 'black',
                 }}
             />

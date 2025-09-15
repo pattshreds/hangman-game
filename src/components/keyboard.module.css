@@ -16,10 +16,6 @@
     color: white;
 }
 
-.btns.inactive {
-    opacity: 0.3;
-}
-
 .btns:hover:not(:disabled),
 .btns:focus:not(:disabled) {
     background-color: rgb(137, 208, 238);
@@ -28,19 +24,18 @@
 .btns {
     border: none;
     border-radius: 8px;
-    /* font-size: 16px; */
     font-weight: 600;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    /* color: white; */
+    /* border: 1px solid rgba(255, 255, 255, 0.2); */
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btns:hover {
+.btns:hover:not(:disabled),
+.btns:focus:not(:disabled) {
     background: rgba(151, 229, 156, 0.25);
     backdrop-filter: blur(15px);
     border-color: rgba(255, 255, 255, 0.4);
@@ -49,7 +44,11 @@
 }
 
 .btns:active {
-    /* Pressed state */
     transform: translateY(-1px) scale(1.02);
     transition: all 0.1s ease;
+}
+
+.btns.inactive {
+    opacity: 0.3;
+    color: red;
 }

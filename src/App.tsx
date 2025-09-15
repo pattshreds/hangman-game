@@ -93,8 +93,12 @@ function App() {
                 style={{
                     fontSize: '2rem',
                     textAlign: 'center',
+                    fontFamily: 'monospace',
+                    marginTop: '1rem',
+                    letterSpacing: '1.5px',
                 }}
             >
+                {!isWinner && !isLoser && 'Hangman!'}
                 {isWinner && 'Winner! Press Enter to play again.'}
                 {isLoser && 'Nice try. Press Enter to play again.'}
             </div>
