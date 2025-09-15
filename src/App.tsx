@@ -99,8 +99,8 @@ function App() {
                 }}
             >
                 {!isWinner && !isLoser && 'Hangman!'}
-                {isWinner && 'Winner! Press Enter to play again.'}
-                {isLoser && 'Nice try. Press Enter to play again.'}
+                {isWinner && 'Winner! Refresh or press Enter to play again.'}
+                {isLoser && 'Nice try. Refresh or press Enter to play again.'}
             </div>
             <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
             <HangmanWord
