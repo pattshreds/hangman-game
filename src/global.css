@@ -1,10 +1,11 @@
-* {
+body {
     margin: 0;
     padding: 0;
+    background-color: darkgray;
 }
 
 #appContainer {
-    border: 2px solid rgb(104, 255, 104);
+    /* border: 2px solid rgb(104, 255, 104); */
     max-width: 1000px;
     display: flex;
     flex-direction: column;

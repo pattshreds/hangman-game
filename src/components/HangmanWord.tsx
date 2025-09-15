@@ -12,7 +12,7 @@ export function HangmanWord({
     return (
         <div
             style={{
-                border: '2px solid red',
+                // border: '2px solid red',
                 maxWidth: '100vw',
                 display: 'flex',
                 gap: '.25em',
@@ -23,7 +23,13 @@ export function HangmanWord({
             }}
         >
             {wordToGuess.split('').map((letter, index) => (
-                <span style={{ borderBottom: '.1em solid black' }} key={index}>
+                <span
+                    style={{
+                        borderBottom: '.1em solid black',
+                        borderRadius: '10%',
+                    }}
+                    key={index}
+                >
                     <span
                         style={{
                             visibility:

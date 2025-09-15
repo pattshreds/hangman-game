@@ -1,4 +1,4 @@
-.btns {
+/* .btns {
     width: 100%;
     border: 3px solid black;
     background: none;
@@ -23,4 +23,33 @@
 .btns:hover:not(:disabled),
 .btns:focus:not(:disabled) {
     background-color: rgb(137, 208, 238);
+} */
+
+.btns {
+    border: none;
+    border-radius: 8px;
+    /* font-size: 16px; */
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* color: white; */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btns:hover {
+    background: rgba(151, 229, 156, 0.25);
+    backdrop-filter: blur(15px);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btns:active {
+    /* Pressed state */
+    transform: translateY(-1px) scale(1.02);
+    transition: all 0.1s ease;
 }
