@@ -14,7 +14,7 @@ function App() {
     const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
 
     const incorrectLetters = guessedLetters.filter(
-        (letter) => !wordToGuess.includes(letter)
+        (letter: string) => !wordToGuess.includes(letter)
     );
 
     const isLoser = incorrectLetters.length >= 6;
@@ -28,7 +28,7 @@ function App() {
             if (guessedLetters.includes(letter) || isLoser || isWinner) {
                 return;
             } else {
-                setGuessedLetters((currentLetters) => [
+                setGuessedLetters((currentLetters: string[]) => [
                     ...currentLetters,
                     letter,
                 ]);

@@ -6,17 +6,15 @@
         "lib": ["ES2022", "DOM", "DOM.Iterable"],
         "module": "ESNext",
         "skipLibCheck": true,
-        "resolveJsonModule": true,
-        "allowSyntheticDefaultImports": true,
 
         /* Bundler mode */
-        // "moduleResolution": "bundler",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "allowImportingTsExtensions": true,
         "verbatimModuleSyntax": true,
         "moduleDetection": "force",
         "noEmit": true,
         "jsx": "react-jsx",
+        "types": ["vite/client", "react", "react-dom"],
 
         /* Linting */
         "strict": true,
